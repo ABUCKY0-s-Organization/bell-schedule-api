@@ -26,7 +26,8 @@ app.use(cors());
 app.use(morgan('combined'));
 
 //announcements/models/users.model.js:
-const announcementModel = mongoose.model('Announcements', announcementsSchema);
+const announcementModel = mongoose.model('announcements', announcementsSchema);
+
 // defining an endpoint to return all ads
 app.get('/', (req, res) => {
   res.send(ads);

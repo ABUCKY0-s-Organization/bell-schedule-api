@@ -16,7 +16,7 @@
     "morgan": "^1.10.0"
   },
   "engines": {
-    "node": "14.17.16",
+    "node": "16.x",
     "npm": "7.x"
   },
   "repository": {

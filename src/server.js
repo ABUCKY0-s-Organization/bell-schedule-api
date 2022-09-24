@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
+const mongoose = require('mongoose');
 
 // defining the Express app
 const app = express();
@@ -26,7 +27,7 @@ app.use(cors());
 app.use(morgan('combined'));
 
 //announcements/models/users.model.js:
-const announcementModel = mongoose.model('announcements', announcementsSchema);
+//const announcementModel = mongoose.model('announcements', AnnouncementsSchema);
 
 // defining an endpoint to return all ads
 app.get('/', (req, res) => {

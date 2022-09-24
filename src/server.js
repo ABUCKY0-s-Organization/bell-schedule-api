@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
-const mongoose = requre('mongoose');
+
 // defining the Express app
 const app = express();
 // defining an array to work as the database (temporary solution)

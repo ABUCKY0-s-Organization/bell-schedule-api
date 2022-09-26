@@ -14,7 +14,8 @@
     "cors": "^2.8.5",
     "helmet": "^6.0.0",
     "morgan": "^1.10.0",
-    "mongoose": "^6.6.1"
+    "mongoose": "^6.6.1",
+    "cassandra-driver": "^4.6.4"
   },
   "engines": {
     "node": "16.x",

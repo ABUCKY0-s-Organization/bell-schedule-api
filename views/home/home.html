@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Create Announcement</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <style>
+    * {
+      font-family: arial, sans-serif;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td,
+    th {
+      border: 2px solid black;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #6699ff;
+    }
+    tr:nth-child(odd) {
+      background-color: white;
+      color: black;
+    }
+    tr.class {
+      background-color: black;
+      color: white;
+    }
+    body {
+      background-color: black;
+    }
+    .important {
+      color: red;
+      font-weight: 800;
+    }
+  </style>
+  <body>
+    <table>
+      <tr class="class">
+        <th>URL</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>/</td>
+        <td>Homepage</td>
+      </tr>
+      <tr>
+        <td>/api/</td>
+        <td>The API</td>
+      </tr>
+      <tr>
+        <td><a src="/api/announcements/">/api/announcements</a></td>
+        <td>Returns the announcements</td>
+      </tr>
+      <tr>
+        <td><a src="/api/announcements/:id">/api/announcements/:id</a></td>
+        <td>Returns the announcement with the specified id</td>
+      </tr>
+      <tr>
+        <td><a src="/create">/create</a></td>
+        <td>
+          Creates an announcement.
+          <div class="important">Requires an Admin Password</div>
+        </td>
+      </tr>
+      <tr>
+        <td><a src="/api/schedules">/api/schedules</a></td>
+        <td>
+          Returns The Schedules
+          <div class="important">Currently Not Properly Implemented</div>
+        </td>
+      </tr>
+    </table>
+    <p style="color: white">
+      Append /hman after any /api/ to get the data from Harrison's Database
+    </p>
+  </body>
+</html>

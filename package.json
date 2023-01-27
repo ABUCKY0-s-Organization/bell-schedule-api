@@ -1,10 +1,10 @@
 {
-  "name": "hello-express",
+  "name": "nodejsapi",
   "version": "0.0.1",
-  "description": "A simple Node app built on Express, instantly up and running.",
+  "description": "A Node JS API made for the school bell schedule website, at lc-bell-countdown.netlify.app and bell-schedule.netlify.app",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node -r newrelic app/server.js"
   },
   "dependencies": {
     "express": "^4.18.2",
@@ -13,7 +13,9 @@
     "pg": "^8.8.0",
     "cookie-parser": "^1.4.6",
     "fs": "^0.0.2",
-    "axios": "^1.1.2"
+    "axios": "^1.1.2",
+    "handlebars": "^4.7.7",
+    "newrelic": "^9.8.1"
   },
   "engines": {
     "node": "16.x",

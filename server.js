@@ -55,7 +55,7 @@ app.get("/api/announcements/:id", async (req, res) => {
 });
 
 app.get("/create", (req, res) => {
-  res.sendFile(__dirname + "/views/create.html");
+  res.sendFile(__dirname + "/aaronsBellScheduleAPI/views/create.html");
 });
 
 app.post("/api/announcements", (req, res) => {

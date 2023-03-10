@@ -5,6 +5,15 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+var RateLimit = require('express-rate-limit');
+var limiter = RateLimit({
+  windowMs: 1*60*1000, // 1 minute
+  max: 5
+});
+
+// apply rate limiter to all requests
+app.use(limiter);
+
 
 const fs = require("fs");
 

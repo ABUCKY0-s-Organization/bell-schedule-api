@@ -10,7 +10,7 @@ const fs = require("fs");
 
 const axios = require("axios");
 const cors = require("cors");
-
+app.use(cors());
 //for storing and managing cookies
 const cookieParser = require("cookie-parser");
 app.use(cookieParser());

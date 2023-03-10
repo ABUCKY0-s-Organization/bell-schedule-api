@@ -32,7 +32,7 @@ function runCommand(command){
 function getAll() {
   return new Promise((res, rej) => {
     //the table name needs to be out of the quotes
-    bsadbp.query("SELECT * FROM announcements WHERE true", (err, result) => {
+    bsadbp.query("SELECT * FROM announcements WHERE true ORDER BY id DESC", (err, result) => {
       //some error handling could help out here
       if (err) {
         console.log(err);

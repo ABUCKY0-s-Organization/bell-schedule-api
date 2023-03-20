@@ -1,1 +1,3 @@
 /OLDTESTS/*
+/node_modules/
+.env

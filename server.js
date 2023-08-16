@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 var RateLimit = require('express-rate-limit');
 var limiter = RateLimit({
   windowMs: 1*60*1000, // 1 minute
-  max: 20
+  max: 25
 });
 
 // apply rate limiter to all requests
